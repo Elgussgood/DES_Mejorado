@@ -5,9 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.util.List"%>
-<%@page import="java.io.File"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +20,7 @@
 </head>
 <body>
         <div id="menu">
-            <form action="DES" method="post">
+            <form action="Des_aplicado.jsp" method="post">
                 <div id="titulo"><p>Cifrado DES</p></div>
                 <p class="elementosform">Sube un archivo para poder aplicarle el cifrado DES</p>
                 <label class="elementosform" for="clave">Introduce tu clave:</label>
@@ -31,7 +29,7 @@
                 <button type="button" id="btn_decifrar">Descifrar</button>
                 <div id="subir_txt">
                     <p>Subir archivo a cifrar</p>
-                    <input type="file" id="btn_subir" onclick="MostrarCD();">
+                    <input type="file" id="btn_subir" onclick="MostrarCD();" accept=".txt,.cifrado">
                 </div>
             </form>
         </div>
