@@ -7,4 +7,9 @@ function MostrarCD(){
     document.getElementById("btn_cifrar").style.display="block";
     document.getElementById("btn_decifrar").style.display="block";
 }
+function MostrarE(){
+    document.getElementById("btn_enviar").style.display="block";
+    document.getElementById("btn_decifrar").style.display="none";
+    document.getElementById("btn_cifrar").style.display="none";
+}
 

@@ -20,17 +20,18 @@
 </head>
 <body>
         <div id="menu">
-            <form action="Des_aplicado.jsp" method="post">
+            <form action="Des_aplicado.jsp" method="post" enctype="multipart/form-data">
                 <div id="titulo"><p>Cifrado DES</p></div>
                 <p class="elementosform">Sube un archivo para poder aplicarle el cifrado DES</p>
                 <label class="elementosform" for="clave">Introduce tu clave:</label>
                 <input type="text" class="elementosform" id="clave" name="clave" placeholder="Clave">
-                <button type="button" id="btn_cifrar">Cifrar</button><br>
-                <button type="button" id="btn_decifrar">Descifrar</button>
+                <button type="button" id="btn_cifrar" onclick="MostrarE();">Cifrar</button><br>
+                <button type="button" id="btn_decifrar" onclick="MostrarE();">Descifrar</button>
                 <div id="subir_txt">
                     <p>Subir archivo a cifrar</p>
-                    <input type="file" id="btn_subir" onclick="MostrarCD();" accept=".txt,.cifrado">
+                    <input type="file" id="btn_subir" name="archivo" onclick="MostrarCD();" accept=".txt,.cifrado">
                 </div>
+                <input type="submit" id="btn_enviar" value="Ejecutar">
             </form>
         </div>
 </body>

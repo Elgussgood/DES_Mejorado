@@ -11,6 +11,9 @@
 <%@page import="Cifrado_DES.Cifrado"%>
 <%
 Cifrado de = new Cifrado();
+request.getAttribute("archivo");
+String key = "pepepepe";
+de.Cifrar(, key);
 %>
 <!DOCTYPE html>
 <html>

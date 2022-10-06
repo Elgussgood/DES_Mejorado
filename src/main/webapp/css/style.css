@@ -97,3 +97,15 @@ body{
     height: 4rem;
     background-color: black;
 }
+
+#btn_enviar{
+    display: none;
+    top: 3rem;
+    left: 12rem;
+    border-radius: 1rem;
+    color: white;
+    position: relative;
+    width: 14rem;
+    height: 4rem;
+    background-color: black;
+}
